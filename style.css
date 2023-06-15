@@ -358,13 +358,13 @@ margin-top: 1em;
   }
   
   .social-icon.facebook-icon {
-    background-image: url("media/twitter-icon.png");
+    background-image: url("twitter-icon.png");
   }
 
 
   
   .social-icon.twitter-icon {
-    background-image: url("media/facebook-icon.png");
+    background-image: url("facebook-icon.png");
   }
   
   .phone-number {
