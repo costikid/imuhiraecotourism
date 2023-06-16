@@ -386,13 +386,13 @@ margin-top: var(--most-common-em);
   }
   
   .social-icon.facebook-icon {
-    background-image: url("media/twitter-icon.webp");
+    background-image: url("twitter-icon.webp");
   }
 
 
   
   .social-icon.twitter-icon {
-    background-image: url("media/facebook-icon.webp");
+    background-image: url("facebook-icon.webp");
   }
   
   .phone-number {
