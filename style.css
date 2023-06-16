@@ -1,6 +1,7 @@
   /* Nunito sans serif font*/
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); 
+  /* Smooth scrolling*/
 
 html{
     scroll-behavior: smooth;
@@ -17,7 +18,22 @@ html{
     --box-blur: blur( 7.5px );
     --box-blur-2: blur( 7.5px );
     --box-border:  1px solid rgba( 255, 255, 255, 0.18 );
+    --most-common-position: center;
+    --most-common-em: 1em;
 }
+
+  /* Global styles*/
+
+  
+p {
+  margin-top: var(--most-common-em);
+  
+}
+
+button {
+  margin-top: var(--most-common-em);
+}
+
 
 body{
     font-family: 'Nunito', sans-serif;
@@ -39,6 +55,9 @@ body{
     background-color: var(--dark-green);
   }
 
+    /* Navbar style*/
+
+
   nav{
 z-index: 2;
     background-color: var(--dark-green);
@@ -57,25 +76,26 @@ z-index: 2;
     width: 50%;
     margin: auto;
     margin-top: 0.5em;
+    padding: var(--most-common-em);
       }
     
 
 
       .textbox h1{
-        text-align: center;
+        text-align: var(--most-common-position);
       }
 
       .about-us p{
-        text-align: center;
+        text-align: var(--most-common-position);
      }
   /* Styles hero section*/
 
 .hero {
     position: relative;
-    text-align: center;
+    text-align: var(--most-common-position);
     background-image: url('https://www.tripsavvy.com/thmb/ESemQcXAEmPpFm6kJoIUELBD7Gw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1330741701-a79c6a941e01454e84a41dc442baa99e.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: var(--most-common-position);
     padding: 100px 0;
     
   }
@@ -97,24 +117,30 @@ z-index: 2;
     color: var(--black-);
   }
   
+      /* Not a style for hero button, it's the style for 
+      the CONTAINER that has the 2 buttons*/
+
   .hero-buttons {
     display: flex;
-    justify-content: center;
-    padding: 1em;
+    justify-content: var(--most-common-position);
+    padding: var(--most-common-em);
   }
 
-    /* Styles for testimonial cards*/
+    /* Styles for testimonials section*/
 
-  
+      /* Testimonials container*/
+
   .testimonials {
     display: flex;
-    justify-content: center;
+    justify-content: var(--most-common-position);
     margin-top: 50px;
     position: relative;
     overflow: hidden;
     height: 20em;
   }
   
+        /* Testimonials card*/
+
   .testimonial-card {
     position: absolute;
     background-color: var(--white-);
@@ -124,13 +150,16 @@ z-index: 2;
     width: 300px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    text-align: center;
+    text-align: var(--most-common-position);
   }
   
   .testimonial-card.active {
     opacity: 1;
   }
   
+
+        /* Image inside the testimonials card*/
+
   .testimonial-card img {
     width: 100px;
     height: 100px;
@@ -139,6 +168,9 @@ z-index: 2;
     margin: 0 auto 10px;
   }
   
+
+          /* Text inside the testimonials card*/
+
 .testimonial-card blockquote {
     font-style: italic;
     overflow: hidden;
@@ -164,7 +196,7 @@ backdrop-filter: var(--box-blur);
 border-radius: 10px;
 border: var(--box-border);
 background-color: var(--white-);
-margin-top: 1em;
+margin-top: var(--most-common-em);
 
 
   }
@@ -183,8 +215,8 @@ margin-top: 1em;
   }
   
   .slider-card {
-    text-align: center;
-    padding: 1em;
+    text-align: var(--most-common-position);
+    padding: var(--most-common-em);
     
    
   }
@@ -194,24 +226,14 @@ margin-top: 1em;
     height: auto;
     
   }
-  
-  p {
-    margin-top: 1em;
-    
-  }
-  
-  button {
-    margin-top: 1em;
-  }
-
     /* Styles for the activities slider arrows*/
 
   
   .arrows {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: var(--most-common-position);
+    justify-content: var(--most-common-position);
   }
   
   .arrow {
@@ -223,7 +245,7 @@ margin-top: 1em;
     margin: 0 10px;
     cursor: pointer;
     font-size: 2em;
-    text-align: center;
+    text-align:var(--most-common-position);
 
   }
   
@@ -246,8 +268,8 @@ margin-top: 1em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
-    margin-top: 1em;
-    padding: 1em;
+    margin-top: var(--most-common-em);
+    padding: var(--most-common-em);
     background-color: var(--dark-green);}
 
   
@@ -256,6 +278,10 @@ margin-top: 1em;
     height: auto;
     cursor: pointer;
   }
+
+      /* Modal that opens when image 
+      is clicked*/
+
   
   .modal {
     display: none;
@@ -267,9 +293,11 @@ margin-top: 1em;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     overflow: auto;
-    justify-content: center;
-    align-items: center;
+    justify-content: var(--most-common-position);
+    align-items: var(--most-common-position);
   }
+
+   /* X symbol to close the modal*/
   
   .modal__close {
     position: absolute;
@@ -295,11 +323,11 @@ margin-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 1em;
+    padding: var(--most-common-em);
   }
 
   .contact-section p{
-    text-align: center;
+    text-align: var(--most-common-position);
   }
   
   .contact-form {
@@ -312,7 +340,7 @@ margin-top: 1em;
   
   .contact-form h1 {
     
-    text-align: center;
+    text-align: var(--most-common-position);
   }
   
   .form-group {
@@ -338,13 +366,13 @@ margin-top: 1em;
     background-color: var(--white-);
     border-radius: 5px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: var(--most-common-position);
+    justify-content: var(--most-common-position);
   }
   
   .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: var(--most-common-position);
     margin-top: 20px;
   }
   
@@ -354,21 +382,21 @@ margin-top: 1em;
     margin: 0 10px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: var(--most-common-position);
   }
   
   .social-icon.facebook-icon {
-    background-image: url("twitter-icon.png");
+    background-image: url("media/twitter-icon.webp");
   }
 
 
   
   .social-icon.twitter-icon {
-    background-image: url("facebook-icon.png");
+    background-image: url("media/facebook-icon.webp");
   }
   
   .phone-number {
-    text-align: center;
+    text-align: var(--most-common-position);
     margin-top: 20px;
   }
   
@@ -387,7 +415,7 @@ margin-top: 1em;
     }
     
     .contact-details {
-      text-align: center;
+      text-align: var(--most-common-position);
     }
   }
   
