@@ -1,4 +1,4 @@
-// JavaScript is only required if you want to add sliding functionality
+// slider with arrows to go left and right 
 const slider = document.querySelector('.activities-slider');
 const slideWidth = document.querySelector('.slide').offsetWidth;
 
@@ -9,6 +9,9 @@ document.querySelector('.arrow-left').addEventListener('click', () => {
 document.querySelector('.arrow-right').addEventListener('click', () => {
   slider.scrollLeft += slideWidth;
 });
+
+// Testimonials card changing automatically 
+
 
 const testimonialCards = document.querySelectorAll('.testimonial-card');
 let currentCardIndex = 0;
@@ -21,7 +24,7 @@ function showNextCard() {
 
 setInterval(showNextCard, 3000);
 
-// Add this JavaScript code at the end of your HTML body or in an external JS file
+// Text of the testimonial cards. Basically, regardless of the length of the text, the card enlarges or gets smaller
 
 
 function truncateText() {
@@ -63,6 +66,9 @@ function truncateText() {
 
 window.addEventListener('DOMContentLoaded', truncateText);
 window.addEventListener('resize', truncateText);
+
+
+// modal opens when we click on image
 
 const galleryImages = document.querySelectorAll('.gallery__image');
 const modal = document.getElementById('modal');
