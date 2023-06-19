@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.12.0/tachyons.min.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -31,28 +33,32 @@
   <link rel="icon" type="image/x-icon" href="https://scontent.fmxp6-1.fna.fbcdn.net/v/t39.30808-6/301428089_438617038286964_5838042321191971295_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=NB5-a2zRXZoAX9VCMJr&_nc_ht=scontent.fmxp6-1.fna&oh=00_AfAvv27X5mVv1rtn73j4RkPFtG-TEdTH-8VcCbEJGFyMBg&oe=6490D402">
 </head>
 <body>
-    <nav class="db dt-l w-100 border-box pa2 ph5-l fixed">
-        <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#hero" title="Home">
-          <img  src="https://scontent.fmxp6-1.fna.fbcdn.net/v/t39.30808-6/301428089_438617038286964_5838042321191971295_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=NB5-a2zRXZoAX9VCMJr&_nc_ht=scontent.fmxp6-1.fna&oh=00_AfAvv27X5mVv1rtn73j4RkPFtG-TEdTH-8VcCbEJGFyMBg&oe=6490D402" class="dib w2 h2 br-100" alt="Site Name">
-        </a>
-        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-          <a class="link dim white f6 f5-l dib mr3 mr4-l" href="#about" title="About">About</a>
-          <a class="link dim white f6 f5-l dib mr3 mr4-l" href="#activities" title="Activities">Activities</a>
-          <a class="link dim white f6 f5-l dib mr3 mr4-l" href="#contact" title="Book">Book</a>
-        </div>
-      </nav>
+    
+<!-- Navbar -->
+<nav class="pa3 pa4-ns navbar bg-dark-green">
+  <div class="tc pb3">
+    <a class="link dim white f6 f5-ns dib mr3" href="#about" title="About">About</a>
+    <a class="link dim white f6 f5-ns dib mr3" href="#activities" title="Activities">Activities</a>
+    <a class="link dim white f6 f5-ns dib mr3" href="#accommodation" title="Store">Accommodation</a>
+    <a class="link dim white f6 f5-ns dib" href="#contact" title="Book">Book</a>
+  </div>
+</nav>
+
               <!-- Hero section -->
                             <!-- Client needs to be able to edit the h1 and h2 -->
 
 
     <section class="hero" id="hero">
+      
         <div class="hero-content">
+          <img src="media/imuhira logo.webp">
             <div class="textbox">
           <h1 class="hero-title">Imuhira</h1>
           <h2 class="hero-subtitle">Ecotourism to discover Rwanda</h2></div>
           <div class="hero-buttons">
             <button class="btn"><a class="link white" href="#activities">Activities</a></button>
             <button class="btn"><a class="link white" href="#contact">Book</a></button>
+            
           </div>
         </div>
                       <!-- Testimonials -->
@@ -62,128 +68,132 @@
 
         <div class="testimonials">
           <div class="testimonial-card active">
-            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg" alt="Client 1">
             <blockquote>Here we will put a testimonial from a client</blockquote>
           </div>
           <div class="testimonial-card">
-            <img src="https://i0.wp.com/www.alphr.com/wp-content/uploads/2020/12/Facebook-How-to-Change-Profile-Picture.jpg?fit=1200%2C666&ssl=1" alt="Client 2">
             <blockquote>Here we will put a testimonial from a client</blockquote>
           </div>
           <div class="testimonial-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf5M2j5aP_QleSz2Sb2Qgf-J5UgjP3po54hg&usqp=CAU" alt="Client 3">
-            <blockquote>Here we will put a testimonial from a client. It can be long or short. As you prefer.This one is longer for example.</blockquote>
+            <blockquote id="about">Here we will put a testimonial from a client. It can be long or short. As you prefer.This one is longer for example.</blockquote>
           </div>
         </div>
+           
       </section>
+     
+    
       <!-- About us section -->
                                   <!-- Client needs to be able to modify the p of this section -->
-                                  <div class="about-us" id="about">
+                                  <div class="about-us">
                                     <div class="textbox">
                                        <h1>About us</h1>
-                       <p>We are a Rwandan based ecotourism project. Our name 
-                        "Imuhira" means "at home". We own a campsite in the 
-                        Nyamasheke district on the shores of lake Kivu. We organize different 
-                        community-based tourism activities. 
+                       <p>IKAZE! We are a Rwandan ased green, climate friendly and sustainable tourism project that opened in 2018. Our name "Imuhira" means "at home". 
+                        We own a campsite in the Nyamasheke district on the shores of lake Kivu, 
+                        18 Km from Nyungwe National Park. 
+                        <br><br>
+
+                        We also offer cottage and homestays accommodation and organize different community-based activities. 
+                        Our site allows you to experience Rwanda’s remarkable countryside while staying ‘off the beaten track’, 
+                        with easy access to the popular Kivu belt and a base to the Congo-Nile trail.
+                        <br><br>
+                        We have a positive social impact in a rural place rich in culture. 
+                        
                        </p>
                    </div></div>
                 
-                
+                   
         
         <!-- Slider with different activities -->
         <!-- For all slides: 1 Make image changeable by the client 
         He will upload it. Not copy and paste a link. 2 Make the p changeable by the client -->
-
-    <div class="activities-slider-container" id="activities">
+         
+    <div class="activities-slider-container"id="activities">
         <div class="activities-slider">
-                          <!-- Slide 1 -->
+                      
+                        <!-- Slide 1 -->
 
           <div class="slide">
             <div class="slider-card">
-              <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image"><!-- Make that image changeable by the client. APPLIES TO ALL IMAGES IN THE SLIDER -->
-              <h1>Cottages, tents and homestays</h1>
-              <p>Here we will put a short description of the activity</p>
-              <button class="btn"><a class="link white" href="#contact">Book</a></button>
-
-            </div>
-          </div>
-                        <!-- Slide 2 -->
-
-          <div class="slide">
-            <div class="slider-card">
-              <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image">
+              <img src="media/food activity.webp" alt="Rwandans 
+              serving food outdoors in nature. Rwandan kids are eating 
+              sitting on chairs" loading="lazy">
               <h1>Food, Beverage, and catering
             </h1>
 
-              <p>Here we will put a short description of the activity</p>
+              <p>The traditionally colored lounge is used as Bar and Restaurant. 3 meals a day are served to pre-booked guests and visitors and teams on retreats or picnics. For walk-ins the restaurant serves snacks. </p>
               <button class="btn"><a class="link white" href="#contact">Book</a></button>
             </div>
           </div>
-                          <!-- Slide 3 -->
+                          <!-- Slide 2 -->
 
           <div class="slide">
             <div class="slider-card">
-              <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image">
+              <img src="media/cultral immersion activity.webp" alt="
+              Rwandan Women dancing outside wearing traditional clothing" loading="lazy">
               <h1>Cultural immersion
             </h1>
 
-              <p>Here we will put a short description of the activity</p>
+              <p>Our guests are entertained by a local traditional troop who also have interesting stories to exchange on topics of historical heroism, the history of homegrown solutions in the Rwandan community, and conservation. 
+              </p>
 
               <button class="btn"><a class="link white" href="#contact">Book</a></button>
             </div>
           </div>     
-          <!-- Slide 4 -->
+          <!-- Slide 3 -->
 
           <div class="slide">
             <div class="slider-card">
-              <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image">
+              <img src="media/arts activity.webp" alt="A rwandan man selling traditional 
+              vases and decorations outside" loading="lazy">
               <h1>Arts, crafts, and gift shop
 
             </h1>
 
-              <p>Here we will put a short description of the activity</p>
+              <p>Imuhira gift shop provides space for local artists to exhibit their creative talent through painting, sculpture, and weaving,... locally produced fabrics from the community are exposed and guests can buy them according to their preferences. Members of the community directly supply the crafts in this gift shop. </p>
 
               <button class="btn"><a class="link white" href="#contact">Book</a></button>
             </div>
           </div>  
           
-          <!-- Slide 5 -->
+          <!-- Slide 4 -->
 
           <div class="slide">
             <div class="slider-card">
-              <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image">
+              <img src="media/nature-activity.webp" alt="the top of a mountain
+              there is grass. You can see another mountain and a lake" loading="lazy">
               <h1>Village and Nature walks
 
 
             </h1>
 
-              <p>Here we will put a short description of the activity</p>
+              <p>Solo travelers and teams can go on a Village Nature Walk in teh community around the campsite or the other side of Lake Kivu in Nyabitekeri and Shangi, with local guides helping to identify plants and birds along the way. </p>
 
               <button class="btn"><a class="link white" href="#contact">Book</a></button>
             </div>
           </div> 
 
-          <!-- Slide 6 -->
+          <!-- Slide 5 -->
 
           <div class="slide">
             <div class="slider-card">
-              <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image">
+              <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image" loading="lazy">
               <h1>Coffee washing experience
 
 
 
             </h1>
 
-              <p>Here we will put a short description of the activity</p>
+              <p>In partnership with Shara Coffee Cooperative, a 45 minutes tour of the washing plant takes you through the whole experience from coffee planting to washing. 
+              </p>
 
               <button class="btn"><a class="link white" href="#contact">Book</a></button>
             </div>
           </div> 
 
-           <!-- Slide 7 -->
+           <!-- Slide 6 -->
 
            <div class="slide">
             <div class="slider-card">
-              <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image">
+              <img src="media/hiking.webp" loading="lazy" alt="Tourists going up a mountain. It's sunny and there are clear skyes">
               <h1>Hiking & Birdwatching
 
 
@@ -191,20 +201,35 @@
 
             </h1>
 
-              <p>Here we will put a short description of the activity</p>
+              <p> Bird watchers can go birding with local and native guides along Lake Kivu’s well-designed endemic birding paths. Hikes are good for exploring the diversified scenery of banana plantations, hills, rivers, and Lake Kivu.
+              </p>
 
               <button class="btn"><a class="link white" href="#contact">Book</a></button>
             </div>
           </div> 
 
-            <!-- Slide 8 -->
+            <!-- Slide 7 -->
 
             <div class="slide">
                 <div class="slider-card">
-                  <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image">
+                  <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" loading="lazy" alt="Slide Image">
                   <h1>Kayaks and boat tours</h1>
     
-                  <p>Here we will put a short description of the activity</p>
+                  <p>In partnership with Shara Coffee Cooperative, a 45 minutes tour of the washing plant takes you through the whole experience from coffee planting to washing. </p>
+    
+                  <button class="btn"><a class="link white" href="#contact">Book</a></button>
+                </div>
+              </div> 
+             
+              <!-- Slide 8 -->
+
+            <div class="slide">
+                <div class="slider-card">
+                  <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" loading="lazy" alt="Slide Image">
+                  <h1>Congo Nile Trail Guiding
+                </h1>
+    
+                  <p>Full guiding is provided on the Congo Nile Trail from Rubavu to Kamembe town (border to DRC’s Bukavu town). This is also extended to Bugarama rice plantations and water springs. </p>
     
                   <button class="btn"><a class="link white" href="#contact">Book</a></button>
                 </div>
@@ -213,43 +238,23 @@
 
             <div class="slide">
                 <div class="slider-card">
-                  <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image">
-                  <h1>Fishing adventures</h1>
-    
-                  <p>Here we will put a short description of the activity</p>
-    
-                  <button class="btn"><a class="link white" href="#contact">Book</a></button>
-                </div>
-              </div> 
-              <!-- Slide 10 -->
-
-            <div class="slide">
-                <div class="slider-card">
-                  <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image">
-                  <h1>Congo Nile Trail Guiding
-                </h1>
-    
-                  <p>Here we will put a short description of the activity</p>
-    
-                  <button class="btn"><a class="link white" href="#contact">Book</a></button>
-                </div>
-              </div> 
-              <!-- Slide 11 -->
-
-            <div class="slide">
-                <div class="slider-card">
-                  <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Slide Image">
-                  <h1>Children in Conservation workshops
+                  <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" loading="lazy" alt="Slide Image">
+                  <h1>Volunteering
 
                 </h1>
     
-                  <p>Here we will put a short description of the activity</p>
+                  <p>We welcome volunteers to join hands in community activities for social and environmental positive impact.  
+
+                    
+                    We do Environmental Awareness and Environmental Conservation for students in college and the
+                    “Children in Conservation” project. 
+                    </p>
     
                   <button class="btn"><a class="link white" href="#contact">Book</a></button>
                 </div>
               </div> 
 
-              <!-- Slide 12-->
+              <!-- Slide 10-->
 
             <div class="slide">
                 <div class="slider-card">
@@ -259,7 +264,8 @@
 
                 </h1>
     
-                  <p>Here we will put a short description of the activity</p>
+                  <p>Our team is qualified and dedicated to facilitating scientific and academic research on tourism, conservation, and community empowerment with a specific focus on our community and area. 
+                  </p>
     
                   <button class="btn"><a class="link white" href="#contact">Book</a></button>
                 </div>
@@ -285,23 +291,77 @@
                                     Not copy and paste a link. -->
 
       <div class="gallery">
-        <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Image 1" class="gallery__image">
-        <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Image 1" class="gallery__image">
-        <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Image 1" class="gallery__image">
-        <img src="https://blog.butterfield.com/wp-content/uploads/2022/04/7-Facts-That-Will-Change-What-You-Think-About-Rwanda.png" alt="Image 1" class="gallery__image">
+        <img src="media/cottage.webp" alt="a cottage Immersed in rwandan nature." class="gallery__image">
+        <img src="media/cultural immersion cooking.webp" alt="traditional rwandan cooking" class="gallery__image" loading="lazy">
+        <img src="media/cultural immersion dance.webp" alt="Rwandan women dancing and wearing 
+        traditional clothing" class="gallery__image" loading="lazy">
+        <img src="media/cultural immersion decoration + Dance.webp" alt="rwandan women dancing outdoors and wearing 
+        traditional clothing" class="gallery__image" loading="lazy">
+       
         
+        <img src="media/Cultural immersion group.webp" alt="A group of Rwandan tour guides 
+        outdoor ready to take you on a cultural immersion activity" class="gallery__image" loading="lazy">
+        <img src="media/panorama.webp" alt="Grassland with a panoramic view on the mountain and different types of trees" class="gallery__image">
+        <img src="media/cultural immersion decoration.webp" alt="traditional rwandan decorative items 
+        placed outdoors in nature" class="gallery__image" loading="lazy">
+        <img src="media/vase.webp" alt="traditional rwandan vases" class="gallery__image">
+        <img src="media/rwandan girl.webp" alt="A rwandan girl (10 years old) wearing a dress. She is in nature 
+        and is carrying a bag" class="gallery__image" loading="lazy">
+        <img src="media/making food.webp" alt="a Rwandan Women making traditional 
+        food on a wooden plate" class="gallery__image" loading="lazy">
     </div>
       
       <div id="modal" class="modal">
         <span class="modal__close">&times;</span>
-        <img src="" alt="Modal Image" class="modal__image">
-      </div>                                      <!-- Separates image gallery 
+     <img class="modal__image" loading="lazy">
+      </div>
+      </div> 
+ <!-- accommodation section. Client needs to be able to modify the 
+IMAGES AND TEXT INSIDE THE TABS -->
+ <div id="accommodation">
+  <div class="textbox">
+     <h1>Accommodation</h1></div>
+ <div class="accommodation-tabs">
+  <input type="radio" name="tabs" id="tabone" checked="checked">
+  <label for="tabone">Cottage</label>
+  <div class="tab">
+    <img src="media/cottage.webp" loading="lazy" alt="a cottage in the rwandan countryside at dusk">
+    <p>Two cottages with a double bed each. Built on local materials with bewildering views of the rural landscape, hills, and the beautiful Kivu. On request, additional beds can be availed to make one of these cottages a dorm. <br><br>   <button class="btn"><a class="link white" href="#contact">Book</a></button>
+    </p>
+
+  </div>
+  
+  <input type="radio" name="tabs" id="tabtwo">
+  <label for="tabtwo">Camping</label>
+  <div class="tab">
+    <img src="media/camping-activity.webp" loading="lazy" alt="a tent in the rwandan countryside">
+    <p> An immense campground, campfire place,  tents, and facilities. This also accommodates camping cars. The adjacence is a fallow buffer zone for restoration and habitat to a diversity of riverain fauna and flora species.
+      <br><br><button class="btn"><a class="link white" href="#contact">Book</a></button>  
+    </p>
+  </div>
+  
+  <input type="radio" name="tabs" id="tabthree">
+  <label for="tabthree">Homestays</label>
+  <div class="tab">
+    <img src="media/camping-activity.webp" loading="lazy" alt="a tent in the rwandan countryside">
+
+    <p>Two hospitable families have all that is needed to host and share with guests their daily life.
+      <br><br><button class="btn"><a class="link white" href="#contact">Book</a></button>
+    </p>
+  
+  </div>
+</div>
+
+      
+      
+      <!-- Separates accommodation
     from contact section. It's a green wave -->
 
              <div class="wave"   >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#137752" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
       </svg></div>
+      
 
                                             <!-- Contact section -->
 
@@ -336,6 +396,8 @@
           </div>
         </div>
       </div>
+
+                                                     
       
       
 <script src="script.js"></script>
