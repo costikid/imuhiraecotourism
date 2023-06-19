@@ -1,3 +1,6 @@
+
+
+
 // slider with arrows to go left and right 
 const slider = document.querySelector('.activities-slider');
 const slideWidth = document.querySelector('.slide').offsetWidth;
@@ -85,3 +88,5 @@ galleryImages.forEach((image) => {
 modalClose.addEventListener('click', () => {
   modal.style.display = 'none';
 });
+
+
