@@ -84,6 +84,10 @@ body{
         text-align: var(--most-common-position);
       }
 
+      .textbox h3{
+        text-align: var(--most-common-position);
+      }
+
       .about-us p{
         text-align: var(--most-common-position);
      }
@@ -211,7 +215,11 @@ body{
   .slider-card {
     text-align: var(--most-common-position);
     padding: var(--most-common-em);
-    height: 30em; /* Adjust the height as needed */
+    height: 29em; /* Adjust the height as needed */
+  }
+
+  .slider-card p{
+    font-size: 0.8em;
   }
   
   .activities-slider img {
@@ -312,6 +320,22 @@ body{
   }
 /* Styles for the Accommodation section tabs */
 
+#accommodation h3{
+  text-align: center;
+}
+.accommodation-feature{
+  background: var(--box-background);
+    box-shadow: var(--box-shadow);
+    backdrop-filter: var(--box-blur);
+    -webkit-backdrop-filter: var(--box-blur-2);
+    border-radius: 10px;
+    border: var(--box-border);
+    padding: var(--most-common-em);
+}
+
+
+
+
   .accommodation-tabs {
     display: flex;
     flex-wrap: wrap; 
@@ -383,8 +407,29 @@ body{
       
     }
   }
+
+        /* Styles for the iframe that contains 
+        the prices of accommodation + meals*/
+
+  
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    height: 28em;
+    overflow: hidden;
+    padding: 1em;
+
+  }
+
   
   
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
       /* Styles for the wave that separates image gallery from contact form*/
 
@@ -513,14 +558,14 @@ body{
 /* Media query for activities slider image on mobile*/
 
 .slide img{
-width: 100%;
+width: 80%;
 }
 /* Media query to have a greater height on mobile 
 for the card of the activities slider*/
 
 .slider-card {
   
-  height: 45em; /* Adjust the height as needed */
+  height: 42em; /* Adjust the height as needed */
 }
 
 /* Media query when the modal image opens on mobile*/
@@ -529,8 +574,8 @@ for the card of the activities slider*/
     max-width: 100%;
     }
 
+    
+
   }
 
 
-
-  
