@@ -424,7 +424,7 @@ body{
   .iframe-container {
     position: relative;
     width: 100%;
-    height: 28em;
+    height: 18em;
     overflow: hidden;
     background: var(--light-green);
     box-shadow: var(--box-shadow);
