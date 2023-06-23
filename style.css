@@ -432,6 +432,7 @@ body{
     -webkit-backdrop-filter: var(--box-blur-2);
     border-radius: 10px;
     border: var(--box-border);
+    
 
 
   }
