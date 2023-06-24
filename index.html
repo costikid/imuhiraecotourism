@@ -1,639 +1,496 @@
-  /* Nunito sans serif font*/
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
-  @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); 
-  /* Smooth scrolling*/
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imuhira Eco Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- How the website appears when shared on twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@imuhiraecotourism" />
+  <meta name="twitter:title" content="Imuhira Eco Tourism" />
+  <meta name="twitter:description" content="Community based tourism company offering activities in nature along the Congo nile" />
+  <meta name="twitter:image" content="https://scontent.fmxp6-1.fna.fbcdn.net/v/t39.30808-6/301428089_438617038286964_5838042321191971295_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=NB5-a2zRXZoAX9VCMJr&_nc_ht=scontent.fmxp6-1.fna&oh=00_AfAvv27X5mVv1rtn73j4RkPFtG-TEdTH-8VcCbEJGFyMBg&oe=6490D402" />
+<!-- General meta tags for seo -->
+  <meta name="description" content="Community based tourism company offering activities in nature along the Congo nile">
+  <meta name="keywords"
+    content="tourism, congo, nature, eco, rwanda, community, activities, tour, hiking conservation, book, africa
+    travel, sustainable">
+  <meta name="author" content="imuhiraecotourism">
+  <meta name="title" content="imuhiraecotourism">
+  <meta property="og:type" content="website" />
+<!-- How the website appears when shared on social media -->
+  <meta property="og:title" content="Imuhira Eco Tourism" />
+  <meta property="og:description" content="Community based tourism company offering activities in nature along the Congo nile">
+    <meta property="og:image" content="https://scontent.fmxp6-1.fna.fbcdn.net/v/t39.30808-6/301428089_438617038286964_5838042321191971295_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=NB5-a2zRXZoAX9VCMJr&_nc_ht=scontent.fmxp6-1.fna&oh=00_AfAvv27X5mVv1rtn73j4RkPFtG-TEdTH-8VcCbEJGFyMBg&oe=6490D402">
+  <!-- Importing the Tachyons css framework -->
 
-html{
-    scroll-behavior: smooth;
-}
-  /* CSS variables*/
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
 
-:root{
-    --light-green: #4caf50;
-    --dark-green: #137752;
-    --white-: #fff;
-    --black-: #121212;
-    --box-background: rgba( 255, 255, 255, 0.6 );
-    --box-shadow: 0 8px 32px 0 rgba(31, 135, 93, 0.37);
-    --box-blur: blur( 7.5px );
-    --box-blur-2: blur( 7.5px );
-    --box-border:  1px solid rgba( 255, 255, 255, 0.18 );
-    --most-common-position: center;
-    --most-common-em: 1em;
-    --very-light-green: rgba(231, 240, 231, 0.6);
-}
-
-  /* Global styles*/
-
-  
-p {
-  margin-top: var(--most-common-em);
-  
-}
-
-button {
-  margin-top: var(--most-common-em);
-}
-
-
-body{
-    font-family: 'Nunito', sans-serif;
-    line-height: 2em;
-}
-  /* Styles for all buttons*/
-
-.btn {
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: var(--light-green);
-    color: var(--white-);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .btn:hover{
-    background-color: var(--dark-green);
-  }
-
-    /* Navbar style*/
-.navbar{
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-    /* Styles for all textboxes (usually headings)*/
-
-
-  .textbox{
-    background: var(--box-background);
-    box-shadow: var(--box-shadow);
-    backdrop-filter: var(--box-blur);
-    -webkit-backdrop-filter: var(--box-blur-2);
-    border-radius: 10px;
-    border: var(--box-border);
-    width: 50%;
-    margin: auto;
-    margin-top: 0.5em;
-    padding: var(--most-common-em);
-      }
+  <link rel="icon" type="image/x-icon" href="https://scontent.fmxp6-1.fna.fbcdn.net/v/t39.30808-6/301428089_438617038286964_5838042321191971295_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=NB5-a2zRXZoAX9VCMJr&_nc_ht=scontent.fmxp6-1.fna&oh=00_AfAvv27X5mVv1rtn73j4RkPFtG-TEdTH-8VcCbEJGFyMBg&oe=6490D402">
+</head>
+<body>
     
+<!-- Navbar -->
+<nav class="pa3 pa4-ns navbar bg-dark-green">
+  <div class="tc">
+    <a class="link dim white f6 f5-ns dib mr3" href="#about" title="About">About</a>
+    <a class="link dim white f6 f5-ns dib mr3" href="#activities" title="Activities">Activities</a>
+    <a class="link dim white f6 f5-ns dib mr3" href="#accommodation" title="Accommodation">Accommodation</a>
+    <a class="link dim white f6 f5-ns dib" href="#contact" title="Book">Book</a>
+  </div>
+</nav>
+
+              <!-- Hero section -->
+                            <!-- Client needs to be able to edit the h1 and h2 -->
 
 
-      .textbox h1{
-        text-align: var(--most-common-position);
-      }
-
-      .textbox h3{
-        text-align: var(--most-common-position);
-      }
-
-      .textbox p{
-        text-align: var(--most-common-position);
-      }
-
-      .about-us p{
-        text-align: var(--most-common-position);
-     }
-  /* Styles hero section*/
-  
-
-.hero {
-    position: relative;
-    text-align: var(--most-common-position);
-    background: url('https://www.tripsavvy.com/thmb/ESemQcXAEmPpFm6kJoIUELBD7Gw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1330741701-a79c6a941e01454e84a41dc442baa99e.jpg');
-    background-size: cover;
-    background-position: var(--most-common-position);
-    padding: 100px 0;
-    
-  }
-
-  .hero img{
-    width: 10%;
-  }
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-  }
-  
-.hero-title {
-    font-size: 32px;
-    margin-top: 0;
-    color: var(--black-);
-}
-  
-  .hero-subtitle {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: var(--black-);
-  }
-  
-      /* Not a style for hero button, it's the style for 
-      the CONTAINER that has the 2 buttons*/
-
-  .hero-buttons {
-    display: flex;
-    justify-content: var(--most-common-position);
-    padding: var(--most-common-em);
-  }
-
-    /* Styles for testimonials section*/
-
-      /* Testimonials container*/
-
-  .testimonials {
-    display: flex;
-    justify-content: var(--most-common-position);
-    margin-top: 50px;
-    position: relative;
-    overflow: hidden;
-    height: 20em;
-  }
-  
-        /* Testimonials card*/
-
-  .testimonial-card {
-    position: absolute;
-    background-color: var(--white-);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-    width: 300px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    text-align: var(--most-common-position);
-  }
-  
-  .testimonial-card.active {
-    opacity: 1;
-  }
-  
-
-
-
-  
-
-          /* Text inside the testimonials card*/
-
-.testimonial-card blockquote {
-    font-style: italic;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
- }
-
-  
-  
-  /* Styles for slider showing the different activities*/
-  .big-container-activities{
-    background-color: var(--dark-green);
-  }
-
-  .activities-slider-container {
-    position: relative;
-    width: 60%;
-    max-width: 100vw;
-    margin: 0 auto;
-    background: var(--box-background);
-    box-shadow: var(--box-shadow);
-    backdrop-filter: var(--box-blur);
-    -webkit-backdrop-filter: var(--box-blur-2);
-    border-radius: 10px;
-    border: var(--box-border);
-    background-color: var(--white-);
-    margin-top: var(--most-common-em);
-  }
-  
-  .activities-slider {
-    display: flex;
-    overflow-x: auto;
-    position: relative;
-  }
-  
-  .slide {
-    flex: 0 0 100%;
-    width: 100%;
-  }
-  
-  .slider-card {
-    text-align: var(--most-common-position);
-    padding: var(--most-common-em);
-    height: 29em; /* Adjust the height as needed */
-  }
-
-  .slider-card p{
-    font-size: 0.8em;
-  }
-  
-  .activities-slider img {
-    width: 40%;
-    height: 40%;
-    object-fit: cover;
-  }
-  
-  .arrows {
-    position: relative;
-    display: flex;
-    align-items: var(--most-common-position);
-    justify-content: var(--most-common-position);
-  }
-  
-  .arrow {
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 2em;
-    text-align: var(--most-common-position);
-  }
-  
-  .arrow-left:before {
-    content: "<";
-    color: var(--black-);
-    padding: 0.5em;
-  }
-  
-  .arrow-right:before {
-    content: ">";
-    color: var(--black-);
-    padding: 0.5em;
-  }
-  
-  
-      /* Styles for the Image gallery*/
-
-      .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 10px;
-        margin-top: var(--most-common-em);
-        padding: var(--most-common-em);
-        background-color: var(--dark-green);
-      }
+    <section class="hero" id="hero">
       
-      .gallery__image {
-        cursor: pointer;
-        box-shadow: var(--box-shadow);
-        backdrop-filter: var(--box-blur);
-        -webkit-backdrop-filter: var(--box-blur-2);
-        border-radius: 10px;
-        border: var(--box-border);
-        width: 100%; /* Added */
-        height: 100%; /* Added */
-        object-fit: cover; /* Added */
-      }
+        <div class="hero-content">
+          <img src="media/imuhira logo.webp">
+            <div class="textbox">
+          <h1 class="hero-title">Imuhira</h1>
+          <h2 class="hero-subtitle">Ecotourism to discover Rwanda</h2></div>
+          <div class="hero-buttons">
+            <button class="btn"><a class="link white" href="#activities">Activities</a></button>
+            <button class="btn"><a class="link white" href="#contact">Book</a></button>
+            
+          </div>
+        </div>
+                      <!-- Testimonials -->
+                                    <!-- Client needs to be able to change the images of the testimonials and the blockquote of the testimonials. He will UPLOAD THE IMAGES, NOT COPY
+                                    AND PASTE A LINK -->
+
+
+        <div class="testimonials">
+          <div class="testimonial-card active">
+            <blockquote>Here we will put a testimonial from a client</blockquote>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>Here we will put a testimonial from a client</blockquote>
+          </div>
+          <div class="testimonial-card">
+            <blockquote id="about">Here we will put a testimonial from a client. It can be long or short. As you prefer.This one is longer for example.</blockquote>
+          </div>
+        </div>
+           
+      </section>
+     
+    
+      <!-- About us section -->
+                                  <!-- Client needs to be able to modify the p of this section -->
+                                  <div class="about-us">
+                                    <div class="textbox">
+                                       <h1>About us</h1>
+                       <p>IKAZE! We are a Rwandan ased green, climate friendly and sustainable tourism project that opened in 2018. Our name "Imuhira" means "at home". 
+                        We own a campsite in the Nyamasheke district on the shores of lake Kivu, 
+                        18 Km from Nyungwe National Park. 
+                        <br><br>
+
+                        We also offer cottage and homestays accommodation and organize different community-based activities. 
+                        Our site allows you to experience Rwanda’s remarkable countryside while staying ‘off the beaten track’, 
+                        with easy access to the popular Kivu belt and a base to the Congo-Nile trail.
+                        <br><br>
+                        We have a positive social impact in a rural place rich in culture. 
+                        
+                       </p>
+                   </div></div>
+                
+                   
+        
+        <!-- Slider with different activities -->
+        <!-- For all slides: 1 Make image changeable by the client 
+        He will upload it. Not copy and paste a link. 2 Make the p changeable by the client -->
+         <div class="big-container-activities">
+    <div class="activities-slider-container"id="activities">
+        <div class="activities-slider">
+                      
+                        <!-- Slide 1 -->
+
+          <div class="slide">
+            <div class="slider-card">
+              <img src="media/food-activity.webp" alt="a group of tourists enjoying an outdoor
+              meal in the rwandan countryside" loading="lazy">
+              <h1>Food, Beverage, and catering
+            </h1>
+
+              <p>The traditionally colored lounge is used as Bar and Restaurant. 3 meals a day are served to pre-booked guests and visitors and teams on retreats or picnics. For walk-ins the restaurant serves snacks. </p>
+              <button class="btn"><a class="link white" href="#contact">Book</a></button>
+            </div>
+          </div>
+                          <!-- Slide 2 -->
+
+          <div class="slide">
+            <div class="slider-card">
+              <img src="media/cultral immersion activity.webp" alt="
+              Rwandan Women dancing outside wearing traditional clothing" loading="lazy">
+              <h1>Cultural immersion
+            </h1>
+
+              <p>Our guests are entertained by a local traditional troop who also have interesting stories to exchange on topics of historical heroism, the history of homegrown solutions in the Rwandan community, and conservation. 
+              </p>
+
+              <button class="btn"><a class="link white" href="#contact">Book</a></button>
+            </div>
+          </div>     
+          <!-- Slide 3 -->
+
+          <div class="slide">
+            <div class="slider-card">
+              <img src="media/arts activity.webp" alt="A rwandan man selling traditional 
+              vases and decorations outside" loading="lazy">
+              <h1>Arts, crafts, and gift shop
+
+            </h1>
+
+              <p>Imuhira gift shop provides space for local artists to exhibit their creative talent through painting, sculpture, and weaving. Locally produced fabrics from the community are exposed and guests can buy them. Members of the community directly supply the crafts in this gift shop. </p>
+
+              <button class="btn"><a class="link white" href="#contact">Book</a></button>
+            </div>
+          </div>  
+          
+          <!-- Slide 4 -->
+
+          <div class="slide">
+            <div class="slider-card">
+              <img src="media/nature-activity.webp" alt="the top of a mountain
+              there is grass. You can see another mountain and a lake" loading="lazy">
+              <h1>Village and Nature walks
+
+
+            </h1>
+
+              <p>Solo travelers and teams can go on a Village Nature Walk in teh community around the campsite or the other side of Lake Kivu in Nyabitekeri and Shangi, with local guides helping to identify plants and birds along the way. </p>
+
+              <button class="btn"><a class="link white" href="#contact">Book</a></button>
+            </div>
+          </div> 
+
+          <!-- Slide 5 -->
+
+          <div class="slide">
+            <div class="slider-card">
+              <img src="media/coffee beans.webp" alt="Slide Image" loading="coffee beans">
+              <h1>Coffee washing experience
+
+
+
+            </h1>
+
+              <p>In partnership with Shara Coffee Cooperative, a 45 minutes tour of the washing plant takes you through the whole experience from coffee planting to washing. 
+              </p>
+
+              <button class="btn"><a class="link white" href="#contact">Book</a></button>
+            </div>
+          </div> 
+
+           <!-- Slide 6 -->
+
+           <div class="slide">
+            <div class="slider-card">
+              <img src="media/hiking.webp" loading="lazy" alt="Tourists going up a mountain. It's sunny and there are clear skyes">
+              <h1>Hiking & Birdwatching
+
+
+
+
+            </h1>
+
+              <p> Bird watchers can go birding with local and native guides along Lake Kivu’s well-designed endemic birding paths. Hikes are good for exploring the diversified scenery of banana plantations, hills, rivers, and Lake Kivu.
+              </p>
+
+              <button class="btn"><a class="link white" href="#contact">Book</a></button>
+            </div>
+          </div> 
+
+            <!-- Slide 7 -->
+
+            <div class="slide">
+                <div class="slider-card">
+                  <img src="media/kayak activity.webp" loading="lazy" alt="A kayak in the river in rwanda">
+                  <h1>Kayaks and boat tours</h1>
+    
+                  <p>In partnership with Shara Coffee Cooperative, a 45 minutes tour of the washing plant takes you through the whole experience from coffee planting to washing. </p>
+    
+                  <button class="btn"><a class="link white" href="#contact">Book</a></button>
+                </div>
+              </div> 
+             
+              <!-- Slide 8 -->
+
+            <div class="slide">
+                <div class="slider-card">
+                  <img src="media/congo trail activity.webp" loading="lazy" alt="A group of rwandan picking tea leafs">
+                  <h1>Congo Nile Trail Guiding
+                </h1>
+    
+                  <p>Full guiding is provided on the Congo Nile Trail from Rubavu to Kamembe town (border to DRC’s Bukavu town). This is also extended to Bugarama rice plantations and water springs. </p>
+    
+                  <button class="btn"><a class="link white" href="#contact">Book</a></button>
+                </div>
+              </div> 
+              <!-- Slide 9 -->
+
+            <div class="slide">
+                <div class="slider-card">
+                  <img src="media/volunteering -activity.webp" loading="lazy" alt="A rwandan men serving food to rwandan children outdoors">
+                  <h1>Volunteering
+
+                </h1>
+    
+                  <p>We welcome volunteers to join hands in community activities for social and environmental positive impact.  
+
+                    
+                    We do Environmental Awareness and Environmental Conservation for students in college and the
+                    “Children in Conservation” project. 
+                    </p>
+    
+                  <button class="btn"><a class="link white" href="#contact">Book</a></button>
+                </div>
+              </div> 
+
+              <!-- Slide 10-->
+
+            <div class="slide">
+                <div class="slider-card">
+                  <img src="media/conservation activity.webp" alt="a deep cave with an individual going inside">
+                  <h1>Conservation research facilitation
+
+
+                </h1>
+    
+                  <p>Our team is qualified and dedicated to facilitating scientific and academic research on tourism, conservation, and community empowerment with a specific focus on our community and area. 
+                  </p>
+    
+                  <button class="btn"><a class="link white" href="#contact">Book</a></button>
+                </div>
+              </div> 
+              
+        </div>
+
+        
+          
+                                    <!-- Activities slider arrows -->
+
+        <div class="arrows">
+          <div class="arrow arrow-left"></div>
+          <div class="arrow arrow-right"></div>
+        </div>
+      </div>
+
+
+
+      
+                                      <!-- Image gallery -->
+                                    <!-- The client needs to be able to change the images himself. He will upload them. 
+                                    Not copy and paste a link. -->
+
+      <div class="gallery">
+        <img src="media/other volunteering.webp" alt="Claude, the founder of Imuhira ecotourism sitting next to a girl without shoes in a corn field" class="gallery__image">
+        <img src="media/cultural immersion cooking.webp" alt="traditional rwandan cooking" class="gallery__image" loading="lazy">
+        <img src="media/other food.webp" alt="A plate of traditional Rwandan food on a table that has a view on the lake" class="gallery__image" loading="lazy">
+        <img src="media/cultural immersion decoration + Dance.webp" alt="rwandan women dancing outdoors and wearing 
+        traditional clothing" class="gallery__image" loading="lazy">
+       
+        
+        <img src="media/crafts.webp" alt="Rwandan decorated crafts like vases and plates" class="gallery__image" loading="lazy">
+        <img src="media/panorama.webp" alt="Grassland with a panoramic view on the mountain and different types of trees" class="gallery__image">
+        <img src="media/rwandan girl.webp" alt="A rwandan girl (10 years old) wearing a dress. She is in nature 
+        and is carrying a bag" class="gallery__image" loading="lazy">
+        <img src="media/vase.webp" alt="traditional rwandan vases" class="gallery__image">
+        
+        
+    </div>
+      
+      <div id="modal" class="modal">
+        <span class="modal__close">&times;</span>
+     <img class="modal__image" loading="lazy">
+      </div>
+      </div> 
+
+    
+      <div class="video-container">
+        <video poster="media/imuhira logo.webp" controls>
+          <source src="media/imuhira.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+
+ <!-- accommodation section. Client needs to be able to modify the 
+IMAGES AND TEXT INSIDE THE TABS -->
+ <div id="accommodation">
+  <div class="textbox">
+     <h1>Accommodation</h1></div>
+      <!-- Section explaining the features of all accommodations -->
+     <div class="flex flex-wrap">
+      <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center accommodation-feature  ">
+        <img src="media/wifi.webp" class="db w-100 br2 br--top" alt="icon of wifi">
+        <div class="pa2 ph3-ns pb3-ns">
+          <div class="dt w-100 mt1">
+            <div class="dtc">
+              <h1 class="f5 f4-ns mv0">Wifi</h1>
+            </div>
+            <div class="dtc tr ">
+              <h2 class="f5 mv0">No extra cost</h2>
+            </div>
+          </div>
+         
+        </div>
+      </article>
+    
+      <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center accommodation-feature  ">
+        <img src="media/solar-panel.webp" class="db w-100 br2 br--top" alt="icon of a solar panel">
+        <div class="pa2 ph3-ns pb3-ns">
+          <div class="dt w-100 mt1">
+            <div class="dtc">
+              <h1 class="f5 f4-ns mv0">Solar</h1>
+            </div>
+            <div class="dtc tc ">
+              <h2 class="f5 mv0">Charge your devices</h2>
+            </div>
+          </div>
+         
+        </div>
+      </article>
+    
+      <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center accommodation-feature  ">
+        <img src="media/swimming.webp" class="db w-100 br2 br--top" alt="icon of a person swimming">
+        <div class="pa2 ph3-ns pb3-ns">
+          <div class="dt w-100 mt1">
+            <div class="dtc">
+              <h1 class="f5 f4-ns mv0">Swimming</h1>
+            </div>
+            <div class="dtc tr ">
+              <h2 class="f5 mv0">Facilities & lifejackets</h2>
+            </div>
+          </div>
+         
+        </div>
+      </article>
+    </div>
+    
+ <div class="accommodation-tabs">
+  <input type="radio" name="tabs" id="tabone" checked="checked">
+  <label for="tabone">Cottage</label>
+  <div class="tab">
+    <img src="media/cottage.webp" loading="lazy" alt="a cottage in the rwandan countryside at dusk">
+    <p>Two cottages with a double bed each. Built on local materials with bewildering views of the rural landscape, hills, and the beautiful Kivu. On request, additional beds can be availed to make one of these cottages a dorm. <br><br>   <button class="btn"><a class="link white" href="#contact">Book</a></button>
+    </p>
+
+  </div>
+
+  
+  
+  <input type="radio" name="tabs" id="tabtwo">
+  <label for="tabtwo">Camping</label>
+  <div class="tab">
+    <img src="media/camping-activity.webp" loading="lazy" alt="a tent in the rwandan countryside">
+    <p> An immense campground, campfire place,  tents, and facilities. This also accommodates camping cars. The adjacence is a fallow buffer zone for restoration and habitat to a diversity of riverain fauna and flora species.
+      <br><br><button class="btn"><a class="link white" href="#contact">Book</a></button>  
+    </p>
+  </div>
+  
+  <input type="radio" name="tabs" id="tabthree">
+  <label for="tabthree">Homestays</label>
+  <div class="tab">
+    <img src="media/homestay accommodation.webp" loading="lazy" alt="inside of a rwandan home with sofa and traditional decorations">
+
+    <p>Two hospitable families have all that is needed to host and share with guests their daily life.
+      <br><br><button class="btn"><a class="link white" href="#contact">Book</a></button>
+    </p>
+  
+  </div>
+</div>
+<!-- Section for the price. The pricing tables
+Are in an iframe that is a google apps script connected to a google sheet
+Just FYI. You have been given access to it -->
+<div class="textbox">
+  <h1>Price</h1>
+  <p>All prices are in US dollars. TBD (to be decided) means that 
+    the price and booking arrangement are to be decided 
+    on a case by case basis with us. 
+  </p></div>
+                                                      
+  <h3>Accommodation and meals</h3>
+  <div class="iframe-container">
+    <iframe src="https://script.google.com/macros/s/AKfycbwiaiaHWmvZ8TRkg_2snk_rzS2C9V0sRz44ZPF-WolipipnCkZL71D8whEsax2iw9ov/exec" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+<h3>Activities</h3>
+<div class="iframe-container">
+  <iframe src="https://script.google.com/macros/s/AKfycbxJrvbvC20VSRXIN8h5aXQgmPMHt5IwviYftwAI_meD08uiyUX6Nyf35buP2rUj2NkL/exec" frameborder="0" allowfullscreen></iframe>
+</div>
+
+  
+  <h3>Facilitation</h3>
+  <div class="iframe-container">
+    <iframe src="https://script.google.com/macros/s/AKfycbwGi7rXFE7cut8bNYan2QGp7Fe2N94tFDKOA8aGOfhZL2n6qThoUI638sIIbCxOPwqN/exec" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+
+
+      
+      <!-- Separates accommodation
+    from contact section. It's a green wave -->
+
+             <div class="wave"   >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#137752" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg></div>
       
 
+                                            <!-- Contact section -->
 
-      /* Modal that opens when image 
-      is clicked*/
+      <div class="contact-section" id="contact">
+        <div class="contact-form">
+          <h1>Contact Us</h1>
+          <p>Would you like to book a trip? Get in touch.</p>
+          <form target="_blank" action="https://formsubmit.co/imuhiragroup@gmail.com
 
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    overflow: auto;
-    justify-content: var(--most-common-position);
-    align-items: var(--most-common-position);
-    
-  }
+          " method="POST">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your message" class="form-control" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+        <div class="contact-details">
+          <div class="google-map">
 
-   /* X symbol to close the modal*/
-  
-  .modal__close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 30px;
-    color: var(--white-);
-    cursor: pointer;
-  }
-  
-  .modal__image {
-    max-width: 50%;
-    max-height: 100%;
-  }
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15946.174862367656!2d29.1855785!3d-2.3215082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c2c75fdb7e5dcf%3A0x7f922d0086d6354a!2sIMUHIRA%20ECO%20TOURISM%20RWANDA!5e0!3m2!1sit!2sit!4v1686842246670!5m2!1sit!2sit" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/imuhira1/" class="social-icon facebook-icon grow" target="_blank" aria-label="twitter"></a>
+            <a href="https://twitter.com/ImuhiraT" class="social-icon twitter-icon grow"target="_blank" aria-label="facebook"></a>
+            <a href="https://www.youtube.com/@imuhiraecocenter-campsitec1280" class="social-icon youtube-icon grow"target="_blank" aria-label="youtube"></a>
+            <a href="https://www.instagram.com/imuhiracampsandcbt/" class="social-icon instagram-icon grow"target="_blank" aria-label="instagram"></a>
 
-/* Styles for the video player */
-
-  .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--dark-green);
-    padding: var(--most-common-em);
-  }
-  
-  .video-container video {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-/* Styles for the Accommodation section tabs */
-
-#accommodation h3{
-  text-align: center;
-}
-.accommodation-feature{
-    padding: var(--most-common-em);
-    background: var(--very-light-green);
-    box-shadow: var(--box-shadow);
-    backdrop-filter: var(--box-blur);
-    -webkit-backdrop-filter: var(--box-blur-2);
-    border: var(--box-border);
-}
-
-
-
-
-
-
-  .accommodation-tabs {
-    display: flex;
-    flex-wrap: wrap; 
-    padding: var(--most-common-em);
-    background: var(--very-light-green);
-
-
-
-    
-  }
-
-  .accommodation-tabs p{
-    text-align: center;
-    padding-bottom: var(--most-common-em);
-  }
-  
-  .accommodation-tabs img {
-    width: 30%;
-    margin: 0 auto; 
-    display: block; 
-  }
-  
-  .accommodation-tabs label {
-    order: 1; 
-    display: block;
-    padding: 1rem 2rem;
-    margin-right: 0.2rem;
-    cursor: pointer;
-    background: var(--dark-green);
-    font-weight: bold;
-    transition: background ease 0.2s;
-    color: var(--white-);
-  }
-  
-  .accommodation-tabs .tab {
-    order: 99; 
-    flex-grow: 1;
-    width: 100%;
-    display: none;
-    background: var(--white-);
-    background: var(--box-background);
-    box-shadow: var(--box-shadow);
-    backdrop-filter: var(--box-blur);
-    -webkit-backdrop-filter: var(--box-blur-2);
-    padding: var(--most-common-em);
-  }
-  
-  .accommodation-tabs input[type="radio"] {
-    display: none;
-  }
-  
-  .accommodation-tabs input[type="radio"]:checked + label {
-    background: var(--light-green);
-  }
-  
-  .accommodation-tabs input[type="radio"]:checked + label + .tab {
-    display: block;
-  }
-  
-  @media (max-width: 45em) {
-    .accommodation-tabs .tab,
-    .accommodation-tabs label {
-      order: initial;
-    }
-    .accommodation-tabs label {
-      width: 100%;
-      margin-right: 0;
-      margin-top: 0.2rem;
-    }
-    .accommodation-tabs img {
-      width: 100%;
-      
-    }
-  }
-
-        /* Styles for the iframe that contains 
-        the prices of accommodation + meals*/
+          </div>
+          <div class="phone-number">
+            <p>Call and What's app</p>
+            <a class="dim" href="tel:+250 789 320 826">+250 789 320 826</a>
+          </div>
+          <div class="phone-number">
+            <p>Call</p>
+            <a class="dim" href="tel:+250 784 598 950">+250 784 598 950</a>
+          </div>
+        </div>
+      </div>
 
  
-  .iframe-container {
-    position: relative;
-    width: 100%;
-    height: 18em;
-    overflow: hidden;
-    background: var(--light-green);
-    box-shadow: var(--box-shadow);
-    backdrop-filter: var(--box-blur);
-    -webkit-backdrop-filter: var(--box-blur-2);
-    border-radius: 10px;
-    border: var(--box-border);
-
-    
-
-
-  }
-
-
-  
-  
-  .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-
-    
-    
-  }
-
-      /* Styles for the wave that separates image gallery from contact form*/
-
-  .wave{
-    background-color: var(--light-green);
-  }
-      /* Styles for contact section*/
-
-  .contact-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: var(--most-common-em);
-  }
-
-  .contact-section p{
-    text-align: var(--most-common-position);
-  }
-  
-  .contact-form {
-    background-color: var(--white-);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: var(--box-shadow);
-    
-  }
-  
-  .contact-form h1 {
-    
-    text-align: var(--most-common-position);
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  textarea {
-    height: 120px;
-    resize: vertical;
-  }
-  
-
-  
-  .google-map {
-    height: 300px;
-    background-color: var(--white-);
-    border-radius: 5px;
-    display: flex;
-    align-items: var(--most-common-position);
-    justify-content: var(--most-common-position);
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: var(--most-common-position);
-    margin-top: 20px;
-  }
-  
-  .social-icon {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: var(--most-common-position);
-  }
-  
-  .social-icon.facebook-icon {
-    background-image: url("media/twitter.webp");
-  }
-
-
-  
-  .social-icon.twitter-icon {
-    background-image: url("media/facebook-icon.webp");
-  }
-
-  .social-icon.youtube-icon {
-    background-image: url("media/youtube.webp");
-  }
-
-  .social-icon.instagram-icon {
-    background-image: url("media/instagram.webp");
-  }
-  
-  
-  .phone-number {
-    text-align: var(--most-common-position);
-    margin-top: 20px;
-  }
-  
-  .phone-number a {
-    text-decoration: none;
-    color: var(--black-);
-    font-weight: bold;
-  }
-
-        /* Media query for contact section*/
-
-  
-  @media (max-width: 767px) {
-    .contact-section {
-      grid-template-columns: 1fr;
-    }
-    
-    .contact-details {
-      text-align: var(--most-common-position);
-    }
-  }
-  
-  
-
-/* Media query for textbox on mobile*/
-
-@media (max-width: 480px) {
-    .textbox {
-      width: 90%;
-      padding: 0.5em;
+                                                      
       
-    }
-
-    /* Media query for activities slider container on mobile*/
-
-.activities-slider-container{
-  width: 90%;
-}
-
-/* Media query for activities slider image on mobile*/
-
-.slide img{
-width: 80%;
-}
-/* Media query to have a greater height on mobile 
-for the card of the activities slider*/
-
-.slider-card {
-  
-  height: 42em; /* Adjust the height as needed */
-}
-
-/* Media query when the modal image opens on mobile*/
-
-.modal__image{
-    max-width: 100%;
-    }
-  
-    /* Shorter video container for phone */
-.video-container{
-  height: 50vh;
-}
-
-  }
-
-/* Display two images per row on ipad air and ipad mini */
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .gallery {
-      grid-template-columns: repeat(2, 1fr); 
-    }
-  }
-
+<script src="script.js"></script>
+</body>
+</head>
+</html>
