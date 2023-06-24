@@ -184,7 +184,25 @@ body{
     -webkit-box-orient: vertical;
  }
 
-  
+ .about-us {
+  display: flex;
+  justify-content: center;
+}
+          /* Styles for the video*/
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+
+.video-container .wistia_embed {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
   
   /* Styles for slider showing the different activities*/
   .big-container-activities{
