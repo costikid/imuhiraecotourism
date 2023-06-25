@@ -10,6 +10,8 @@ html{
 
 :root{
     --light-green: #4caf50;
+    --green: #005603;
+
     --dark-green: #137752;
     --white-: #fff;
     --black-: #121212;
@@ -429,7 +431,7 @@ body{
   }
   
   .accommodation-tabs input[type="radio"]:checked + label {
-    background: var(--light-green);
+    background: var(--green);
   }
   
   .accommodation-tabs input[type="radio"]:checked + label + .tab {
