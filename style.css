@@ -45,7 +45,7 @@ body{
 .btn {
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: var(--light-green);
+    background-color: var(--dark-green);
     color: var(--white-);
     border: none;
     border-radius: 5px;
