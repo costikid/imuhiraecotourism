@@ -33,6 +33,10 @@ p {
   
 }
 
+a{
+  text-decoration: none;
+}
+
 button {
   margin-top: var(--most-common-em);
 }
