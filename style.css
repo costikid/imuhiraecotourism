@@ -572,7 +572,10 @@ width: 100%;}
     
     text-align: var(--most-common-position);
   }
-  
+  form img{
+    width: 50%;
+    margin-top: 0.5em;
+  }
   .form-group {
     margin-bottom: 15px;
   }
@@ -722,4 +725,3 @@ for the card of the activities slider*/
   }
 
   
- 
