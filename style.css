@@ -23,6 +23,8 @@ html{
     --most-common-position: center;
     --most-common-em: 1em;
     --very-light-green: rgba(231, 240, 231, 0.6);
+    --reviews-background: rgba(2, 52, 2, 0.6);
+
 }
 
   /* Global styles*/
@@ -172,55 +174,68 @@ body{
     padding: var(--most-common-em);
   }
 
-    /* Styles for testimonials section*/
+  /* styles for the reviews in the hero section */
 
-      /* Testimonials container*/
-
-  .testimonials {
+  .reviews-container {
     display: flex;
-    justify-content: var(--most-common-position);
-    margin-top: 50px;
-    position: relative;
-    overflow: hidden;
-    height: 20em;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
-        /* Testimonials card*/
+  .reviews-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    text-align: var(--most-common-position);
 
-  .testimonial-card {
-    position: absolute;
-    background-color: var(--white-);
-    padding: 20px;
+    background-color: var(--reviews-background);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    width: 300px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    text-align: var(--most-common-position);
+    color: var(--white-);
+    height: 50%;
+    
   }
   
-  .testimonial-card.active {
-    opacity: 1;
+  .reviews-card-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto;
   }
   
-
-
-
+  .reviews-card-title {
+    font-size: 24px;
+    margin-top: 10px;
+  }
   
+  .reviews-card-subtitle {
+    font-size: 18px;
+    color: var(--white-);
+    margin-top: 5px;
+  }
 
-          /* Text inside the testimonials card*/
+  .reviews-btn{padding: 10px 20px;
+    margin: 0 10px;
+    background-color: var(--light-green);
+    color: var(--white-);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 
-.testimonial-card blockquote {
-    font-style: italic;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
- }
+  }
 
- .about-us {
-  display: flex;
-  justify-content: center;
+  /* styles for 5 stars of reviews in hero section */
+.star-container {
+  font-size: 24px; 
 }
+
+.star {
+  color: yellow;
+}
+
+  
+
           /* Styles for the video*/
 
 .video-container {
@@ -662,6 +677,10 @@ width: 100%;}
 
 .icon-bottom i {
   font-size: 28px;
+}
+
+.footer{
+  text-align: center;
 }
 
         /* Media query for contact section*/
