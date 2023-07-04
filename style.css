@@ -175,6 +175,40 @@ body{
   }
 
   /* styles for the reviews in the hero section */
+.testimonial-container{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial{
+  width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    text-align: var(--most-common-position);
+
+    background-color: var(--reviews-background);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    color: var(--white-);
+    height: 50%;
+}
+
+.testimonial-title{
+  font-size: 15px;
+    margin-top: 10px;
+}
+
+.testimonial-subtitle{
+  font-size: 12px;
+    color: var(--white-);
+    margin-top: 5px;
+}
+
+.stars{
+  color: yellow;
+}
 
   .reviews-container {
     display: flex;
@@ -203,14 +237,16 @@ body{
     object-fit: contain;
     margin: 0 auto;
   }
+
+  
   
   .reviews-card-title {
-    font-size: 24px;
+    font-size: 15px;
     margin-top: 10px;
   }
   
   .reviews-card-subtitle {
-    font-size: 18px;
+    font-size: 12px;
     color: var(--white-);
     margin-top: 5px;
   }
