@@ -1,3 +1,23 @@
+    // JavaScript to change testimonials in the hero section every 4 seconds
+    const testimonials = document.querySelectorAll(".testimonial");
+    let currentTestimonialIndex = 0;
+
+    function showTestimonial(testimonialIndex) {
+      testimonials.forEach((testimonial, index) => {
+        testimonial.style.display = index === testimonialIndex ? "block" : "none";
+      });
+    }
+
+    function changeTestimonial() {
+      currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+      showTestimonial(currentTestimonialIndex);
+    }
+
+    // Change testimonial every 4 seconds
+    setInterval(changeTestimonial, 4000);
+
+    // Initial show
+    showTestimonial(currentTestimonialIndex);
 
 
 // slider with arrows to go left and right 
@@ -87,5 +107,8 @@ galleryImages.forEach((image) => {
 modalClose.addEventListener('click', () => {
   modal.style.display = 'none';
 });
+
+
+
 
 
