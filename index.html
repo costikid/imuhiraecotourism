@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -378,40 +379,36 @@ IMAGES AND TEXT INSIDE THE TABS -->
         <h2 class="accommodation-card-subtitle">Facilities & lifejackets</h2>
       </div>
     </div>
+    <section class="wrapper">
+      <ul class="tabs">
+        <li><a href="#tab1">Cottage</a></li>
+        <li><a href="#tab2">Camping</a></li>
+        <li><a href="#tab3">Homestays</a></li>
+      </ul>
+      <div class="clr"></div>
+      <section class="block">
+        <article id="tab1">
+          <p>Two cottages with a double bed each. Built on local materials with bewildering views of the rural landscape, hills, and the beautiful Kivu. On request, additional beds can be availed to make one of these cottages a dorm.
+          </p>
+          <img src="media/cottage.webp" loading="lazy" alt="a cottage in the rwandan countryside at dusk">
+  
+        </article>
+        <article id="tab2">
+          <p>An immense campground, campfire place, tents, and facilities. This also accommodates camping cars. The adjacence is a fallow buffer zone for restoration and habitat to a diversity of riverain fauna and flora species.
+          </p>
+          <img src="media/camping-activity.webp" loading="lazy" alt="a tent in the rwandan countryside">
+  
+        </article>
+        <article id="tab3">
+          <p>Two hospitable families have all that is needed to host and share with guests their daily life.
+          </p>
+          <img src="media/homestay accommodation.webp" loading="lazy" alt="inside of a rwandan home with sofa and traditional decorations">
+  
+        </article>
+      </section>
+    </section>
     
-    
- <div class="accommodation-tabs">
-  <input type="radio" name="tabs" id="tabone" checked="checked">
-  <label for="tabone">Cottage</label>
-  <div class="tab">
-    <img src="media/cottage.webp" loading="lazy" alt="a cottage in the rwandan countryside at dusk">
-    <p>Two cottages with a double bed each. Built on local materials with bewildering views of the rural landscape, hills, and the beautiful Kivu. On request, additional beds can be availed to make one of these cottages a dorm. <br><br>   <button class="btn"><a class="link white" href="#contact">Book</a></button>
-    </p>
-
-  </div>
-
-  
-  
-  <input type="radio" name="tabs" id="tabtwo">
-  <label for="tabtwo">Camping</label>
-  <div class="tab">
-    <img src="media/camping-activity.webp" loading="lazy" alt="a tent in the rwandan countryside">
-    <p> An immense campground, campfire place,  tents, and facilities. This also accommodates camping cars. The adjacence is a fallow buffer zone for restoration and habitat to a diversity of riverain fauna and flora species.
-      <br><br><button class="btn"><a class="link white" href="#contact">Book</a></button>  
-    </p>
-  </div>
-  
-  <input type="radio" name="tabs" id="tabthree">
-  <label for="tabthree">Homestays</label>
-  <div class="tab">
-    <img src="media/homestay accommodation.webp" loading="lazy" alt="inside of a rwandan home with sofa and traditional decorations">
-
-    <p>Two hospitable families have all that is needed to host and share with guests their daily life.
-      <br><br><button class="btn"><a class="link white" href="#contact">Book</a></button>
-    </p>
-  
-  </div>
-</div>
+ 
 <!-- Section for the price. The pricing tables
 Are in an iframe that is a google apps script connected to a google sheet
 Just FYI. You have been given access to it -->
@@ -503,8 +500,11 @@ Just FYI. You have been given access to it -->
         <div class="contact-details">
           <div class="google-map">
 
-            <iframe title="google maps of where the imuhira eco tourism is" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15946.174862367656!2d29.1855785!3d-2.3215082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c2c75fdb7e5dcf%3A0x7f922d0086d6354a!2sIMUHIRA%20ECO%20TOURISM%20RWANDA!5e0!3m2!1sit!2sit!4v1686842246670!5m2!1sit!2sit" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title="google maps of where the imuhira eco tourism is" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d316652.7237721157!2d28.826930180534827!3d-2.2439864020165126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMjEnMTMuOCJTIDI5wrAwNCc0OC43IkU!5e0!3m2!1sen!2sit!4v1688488073789!5m2!1sen!2sit" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+
+
+        
           <div class="social-icons">
             <a href="https://www.facebook.com/imuhira1/" class="social-icon facebook-icon grow" target="_blank" aria-label="twitter"></a>
             <a href="https://twitter.com/ImuhiraT" class="social-icon twitter-icon grow"target="_blank" aria-label="facebook"></a>
@@ -715,8 +715,8 @@ Just FYI. You have been given access to it -->
   <p class="footer">Website designed by <a class="link dim" href="https://devkenya.com" target="_blank">Devkenya</a></p>
   <p class="footer">Copyright - Imuhira Ecotourism Rwanda Ltd. 2023</p>
 
-
-
+ 
+  
  
 <script src="script.js"></script>
 </body>
