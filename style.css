@@ -485,46 +485,9 @@ width: 100%;}
 
 
 
+  /* Styles for the accommodation tabs */
 
-  .accommodation-tabs {
-    display: flex;
-    flex-wrap: wrap; 
-    padding: var(--most-common-em);
-    background: var(--very-light-green);
-
-
-
-    
-  }
-
-  .accommodation-tabs p{
-    text-align: center;
-    padding-bottom: var(--most-common-em);
-  }
-  
-  .accommodation-tabs img {
-    width: 30%;
-    margin: 0 auto; 
-    display: block; 
-  }
-  
-  .accommodation-tabs label {
-    order: 1; 
-    display: block;
-    padding: 1rem 2rem;
-    margin-right: 0.2rem;
-    cursor: pointer;
-    background: var(--dark-green);
-    font-weight: bold;
-    transition: background ease 0.2s;
-    color: var(--white-);
-  }
-  
-  .accommodation-tabs .tab {
-    order: 99; 
-    flex-grow: 1;
-    width: 100%;
-    display: none;
+  .wrapper{
     background: var(--white-);
     background: var(--box-background);
     box-shadow: var(--box-shadow);
@@ -532,33 +495,34 @@ width: 100%;}
     -webkit-backdrop-filter: var(--box-blur-2);
     padding: var(--most-common-em);
   }
-  
-  .accommodation-tabs input[type="radio"] {
-    display: none;
+  ul.tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
-  
-  .accommodation-tabs input[type="radio"]:checked + label {
+  ul.tabs li {
+    
+    border-bottom: none;
+    float: left;
+    margin: 0 .25em 0 0;
+    padding: .25em .5em;
+    background-color: var(--light-green);
+  }
+  ul.tabs li a {
+    color: var(--white-);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  ul.tabs li.active {
     background: var(--green);
   }
-  
-  .accommodation-tabs input[type="radio"]:checked + label + .tab {
-    display: block;
+ 
+  .clr {
+    clear: both;
   }
-  
-  @media (max-width: 45em) {
-    .accommodation-tabs .tab,
-    .accommodation-tabs label {
-      order: initial;
-    }
-    .accommodation-tabs label {
-      width: 100%;
-      margin-right: 0;
-      margin-top: 0.2rem;
-    }
-    .accommodation-tabs img {
-      width: 100%;
-      
-    }
+  article {
+    border-top: var(--dark-green) solid 1px;
+    padding: 0 1em;
   }
 
         /* Styles for the iframe that contains 
@@ -731,6 +695,15 @@ width: 100%;}
       text-align: var(--most-common-position);
     }
   }
+        /* Media query for tab wrapper to be centered on desktop*/
+
+  @media (min-width: 766px){
+    .wrapper {
+      margin: auto;
+      padding: 1em;
+      width: 50%;
+    }
+  }
   
   
 
@@ -783,4 +756,4 @@ for the card of the activities slider*/
     }
   }
 
-  
+
