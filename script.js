@@ -1,4 +1,4 @@
-#    // JavaScript to change testimonials in the hero section every 4 seconds
+    // JavaScript to change testimonials in the hero section every 4 seconds
     const testimonials = document.querySelectorAll(".testimonial");
     let currentTestimonialIndex = 0;
 
