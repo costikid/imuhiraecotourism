@@ -137,7 +137,7 @@ body{
 .hero {
     position: relative;
     text-align: var(--most-common-position);
-    background: url('https://www.tripsavvy.com/thmb/ESemQcXAEmPpFm6kJoIUELBD7Gw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1330741701-a79c6a941e01454e84a41dc442baa99e.jpg');
+    background: url('https://upload.wikimedia.org/wikipedia/commons/0/0e/Lake_Kivu_%2820875703429%29.jpg');
     background-size: cover;
     background-position: var(--most-common-position);
     padding: 100px 0;
@@ -158,6 +158,9 @@ body{
     margin-top: 0;
     color: var(--black-);
 }
+
+.hero p{
+color: var(--white-);}
   
   .hero-subtitle {
     font-size: 24px;
@@ -670,6 +673,17 @@ width: 100%;}
   border-radius: 50%;
 }
 
+.phone-number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-number a{
+  text-decoration: none;
+  color: var(--green);
+}
+
 .icon-bottom a {
   color: var(--dark-green);
   text-decoration: none;
@@ -757,4 +771,3 @@ for the card of the activities slider*/
   }
 
 
- 
